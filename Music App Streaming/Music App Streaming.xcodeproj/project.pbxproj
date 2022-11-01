@@ -12,6 +12,8 @@
 		E703E2B529112DFD00C3DE79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E703E2B429112DFD00C3DE79 /* Assets.xcassets */; };
 		E703E2B829112DFD00C3DE79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E703E2B729112DFD00C3DE79 /* Preview Assets.xcassets */; };
 		E703E2BF291143D500C3DE79 /* SongsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703E2BE291143D500C3DE79 /* SongsData.swift */; };
+		E73484BA2911B07E007AEC51 /* BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73484B92911B07E007AEC51 /* BlurEffect.swift */; };
+		E73484BC2911C2B7007AEC51 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73484BB2911C2B7007AEC51 /* PlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		E703E2B429112DFD00C3DE79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E703E2B729112DFD00C3DE79 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E703E2BE291143D500C3DE79 /* SongsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsData.swift; sourceTree = "<group>"; };
+		E73484B92911B07E007AEC51 /* BlurEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurEffect.swift; sourceTree = "<group>"; };
+		E73484BB2911C2B7007AEC51 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,11 +57,13 @@
 		E703E2AF29112DFC00C3DE79 /* Music App Streaming */ = {
 			isa = PBXGroup;
 			children = (
+				E73484B82911B06E007AEC51 /* Helpers */,
 				E703E2B029112DFC00C3DE79 /* Music_App_StreamingApp.swift */,
 				E703E2B229112DFC00C3DE79 /* ContentView.swift */,
 				E703E2B429112DFD00C3DE79 /* Assets.xcassets */,
 				E703E2B629112DFD00C3DE79 /* Preview Content */,
 				E703E2BE291143D500C3DE79 /* SongsData.swift */,
+				E73484BB2911C2B7007AEC51 /* PlayerView.swift */,
 			);
 			path = "Music App Streaming";
 			sourceTree = "<group>";
@@ -68,6 +74,14 @@
 				E703E2B729112DFD00C3DE79 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E73484B82911B06E007AEC51 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E73484B92911B07E007AEC51 /* BlurEffect.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +155,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E703E2B329112DFC00C3DE79 /* ContentView.swift in Sources */,
+				E73484BA2911B07E007AEC51 /* BlurEffect.swift in Sources */,
 				E703E2B129112DFC00C3DE79 /* Music_App_StreamingApp.swift in Sources */,
+				E73484BC2911C2B7007AEC51 /* PlayerView.swift in Sources */,
 				E703E2BF291143D500C3DE79 /* SongsData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

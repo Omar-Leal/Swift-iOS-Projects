@@ -38,7 +38,7 @@ struct ContentView: View {
     Album(name: "Cerati", image: "Album2", songs: albumData),
     ]
     
-    var currentAlbum: Album?
+    @State private var currentAlbum: Album?
     
     var body: some View {
         NavigationView{
@@ -48,6 +48,9 @@ struct ContentView: View {
                         ForEach(self.albums,id: \.self ,content: {
                             album in
                             AlbumArt(album: album)
+                                .onTapGesture {
+                                    self.currentAlbum = album
+                                }
                         })
                     }
                 })
@@ -58,7 +61,7 @@ struct ContentView: View {
                         SongCell(songs: song)
                     })
                 }
-            }
+            }.navigationTitle("My Favorite Music")
         }
     }
 }
@@ -69,34 +72,46 @@ struct AlbumArt: View {
     var album: Album
     var body: some View {
         ZStack {
+           
             Image(album.image).resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 200, height: 200, alignment: .center)
             ZStack {
+                BlurEffect(style: .light)
                 Text(album.name)
                     .foregroundColor(.white)
-                    
-            }
-                
-        }
-       
+            }.frame( height: 40, alignment: .center)
+                .cornerRadius(8)
+        }.frame(width: 200, height: 200, alignment: .center)
         .clipped()
-        .cornerRadius(8)
-        .shadow(radius: 10)
-        .padding(10)
-        
+         .cornerRadius(8)
+         //.shadow(radius: 10)
+         .padding(20)
+         
     }
 }
 
 struct SongCell: View {
     var songs: Songs
     var body: some View {
-        EmptyView()
+        HStack {
+            ZStack {
+                Circle().frame(width: 40, height: 40, alignment: .center)
+                        .foregroundColor(.blue)
+                Circle().frame(width: 20, height: 20, alignment: .center)
+                        .foregroundColor(.white)
+            }
+            Text(songs.name)
+                .bold()
+                Spacer()
+            Text(songs.time)
+        }.padding(20)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        
     }
 }
