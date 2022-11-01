@@ -2,11 +2,11 @@
 import Foundation
 
 struct ApiDataResponse: Codable {
-    let articles: [ NewsArticleModels ]
+    let articles: [ ArticleTypes ]
 }
 
 
-struct NewsArticleModels: Codable {
+struct ArticleTypes: Codable {
    let source: Source
    var title: String
    var description: String?

@@ -16,12 +16,12 @@ final class ApiHandler {
         
     }
     
-    public func getAllNews(completionHandlers: @escaping (Result<[String], Error>) -> Void) {
+    public func getAllNews(completionHandlers: @escaping (Result<[ArticleTypes], Error>) -> Void) {
         guard let url = Constants.baseURL else {
             return
         }
         let tasker = URLSession.shared
-        let apiCall = tasker.dataTask(with: url) { data , response, wrongCall in
+        let apiCall = tasker.dataTask(with: url) { data, response, wrongCall in
             
             if let error = wrongCall {
                 completionHandlers(.failure(error))
@@ -29,7 +29,7 @@ final class ApiHandler {
                 
                 do {
                     let result = try JSONDecoder().decode(ApiDataResponse.self, from: data)
-                    print("Articles: \(result.articles.count)")
+                    completionHandlers(.success(result.articles))
                 }
                 catch{
                     completionHandlers(.failure(error))

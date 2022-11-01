@@ -7,33 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E7F61068290F293200815104 /* PopUpVCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F61067290F293200815104 /* PopUpVCTableViewController.swift */; };
-		E7FF2483290D9CA300223FA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FF2482290D9CA300223FA1 /* AppDelegate.swift */; };
-		E7FF2485290D9CA300223FA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FF2484290D9CA300223FA1 /* SceneDelegate.swift */; };
-		E7FF2487290D9CA300223FA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FF2486290D9CA300223FA1 /* ViewController.swift */; };
-		E7FF248C290D9CA400223FA1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7FF248B290D9CA400223FA1 /* Assets.xcassets */; };
-		E7FF248F290D9CA400223FA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FF248D290D9CA400223FA1 /* LaunchScreen.storyboard */; };
-		E7FF2497290DB1AD00223FA1 /* apiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FF2496290DB1AD00223FA1 /* apiHandler.swift */; };
-		E7FF249A290DBD0A00223FA1 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FF2499290DBD0A00223FA1 /* DataModel.swift */; };
-		E7FF249D290DD5EC00223FA1 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FF249C290DD5EC00223FA1 /* ArticleCell.swift */; };
+		E703E2B129112DFC00C3DE79 /* Music_App_StreamingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703E2B029112DFC00C3DE79 /* Music_App_StreamingApp.swift */; };
+		E703E2B329112DFC00C3DE79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703E2B229112DFC00C3DE79 /* ContentView.swift */; };
+		E703E2B529112DFD00C3DE79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E703E2B429112DFD00C3DE79 /* Assets.xcassets */; };
+		E703E2B829112DFD00C3DE79 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E703E2B729112DFD00C3DE79 /* Preview Assets.xcassets */; };
+		E703E2BF291143D500C3DE79 /* SongsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E703E2BE291143D500C3DE79 /* SongsData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E7F61067290F293200815104 /* PopUpVCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpVCTableViewController.swift; sourceTree = "<group>"; };
-		E7FF247F290D9CA300223FA1 /* News-App-Searcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "News-App-Searcher.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7FF2482290D9CA300223FA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E7FF2484290D9CA300223FA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E7FF2486290D9CA300223FA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E7FF248B290D9CA400223FA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E7FF248E290D9CA400223FA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E7FF2490290D9CA400223FA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7FF2496290DB1AD00223FA1 /* apiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apiHandler.swift; sourceTree = "<group>"; };
-		E7FF2499290DBD0A00223FA1 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		E7FF249C290DD5EC00223FA1 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		E703E2AD29112DFC00C3DE79 /* Music App Streaming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music App Streaming.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E703E2B029112DFC00C3DE79 /* Music_App_StreamingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_App_StreamingApp.swift; sourceTree = "<group>"; };
+		E703E2B229112DFC00C3DE79 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E703E2B429112DFD00C3DE79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E703E2B729112DFD00C3DE79 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E703E2BE291143D500C3DE79 /* SongsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E7FF247C290D9CA300223FA1 /* Frameworks */ = {
+		E703E2AA29112DFC00C3DE79 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,91 +34,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E7FF2476290D9CA300223FA1 = {
+		E703E2A429112DFC00C3DE79 = {
 			isa = PBXGroup;
 			children = (
-				E7FF2481290D9CA300223FA1 /* News-App-Searcher */,
-				E7FF2480290D9CA300223FA1 /* Products */,
+				E703E2AF29112DFC00C3DE79 /* Music App Streaming */,
+				E703E2AE29112DFC00C3DE79 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E7FF2480290D9CA300223FA1 /* Products */ = {
+		E703E2AE29112DFC00C3DE79 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E7FF247F290D9CA300223FA1 /* News-App-Searcher.app */,
+				E703E2AD29112DFC00C3DE79 /* Music App Streaming.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E7FF2481290D9CA300223FA1 /* News-App-Searcher */ = {
+		E703E2AF29112DFC00C3DE79 /* Music App Streaming */ = {
 			isa = PBXGroup;
 			children = (
-				E7FF2498290DBCFA00223FA1 /* Models */,
-				E7FF249B290DD5BA00223FA1 /* Views */,
-				E7FF2482290D9CA300223FA1 /* AppDelegate.swift */,
-				E7FF2484290D9CA300223FA1 /* SceneDelegate.swift */,
-				E7FF2486290D9CA300223FA1 /* ViewController.swift */,
-				E7FF248B290D9CA400223FA1 /* Assets.xcassets */,
-				E7FF248D290D9CA400223FA1 /* LaunchScreen.storyboard */,
-				E7FF2490290D9CA400223FA1 /* Info.plist */,
-				E7FF2496290DB1AD00223FA1 /* apiHandler.swift */,
-				E7F61067290F293200815104 /* PopUpVCTableViewController.swift */,
+				E703E2B029112DFC00C3DE79 /* Music_App_StreamingApp.swift */,
+				E703E2B229112DFC00C3DE79 /* ContentView.swift */,
+				E703E2B429112DFD00C3DE79 /* Assets.xcassets */,
+				E703E2B629112DFD00C3DE79 /* Preview Content */,
+				E703E2BE291143D500C3DE79 /* SongsData.swift */,
 			);
-			path = "News-App-Searcher";
+			path = "Music App Streaming";
 			sourceTree = "<group>";
 		};
-		E7FF2498290DBCFA00223FA1 /* Models */ = {
+		E703E2B629112DFD00C3DE79 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				E7FF2499290DBD0A00223FA1 /* DataModel.swift */,
+				E703E2B729112DFD00C3DE79 /* Preview Assets.xcassets */,
 			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		E7FF249B290DD5BA00223FA1 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				E7FF249C290DD5EC00223FA1 /* ArticleCell.swift */,
-			);
-			path = Views;
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E7FF247E290D9CA300223FA1 /* News-App-Searcher */ = {
+		E703E2AC29112DFC00C3DE79 /* Music App Streaming */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E7FF2493290D9CA400223FA1 /* Build configuration list for PBXNativeTarget "News-App-Searcher" */;
+			buildConfigurationList = E703E2BB29112DFD00C3DE79 /* Build configuration list for PBXNativeTarget "Music App Streaming" */;
 			buildPhases = (
-				E7FF247B290D9CA300223FA1 /* Sources */,
-				E7FF247C290D9CA300223FA1 /* Frameworks */,
-				E7FF247D290D9CA300223FA1 /* Resources */,
+				E703E2A929112DFC00C3DE79 /* Sources */,
+				E703E2AA29112DFC00C3DE79 /* Frameworks */,
+				E703E2AB29112DFC00C3DE79 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "News-App-Searcher";
-			productName = "News-App-Searcher";
-			productReference = E7FF247F290D9CA300223FA1 /* News-App-Searcher.app */;
+			name = "Music App Streaming";
+			productName = "Music App Streaming";
+			productReference = E703E2AD29112DFC00C3DE79 /* Music App Streaming.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E7FF2477290D9CA300223FA1 /* Project object */ = {
+		E703E2A529112DFC00C3DE79 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					E7FF247E290D9CA300223FA1 = {
+					E703E2AC29112DFC00C3DE79 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
 				};
 			};
-			buildConfigurationList = E7FF247A290D9CA300223FA1 /* Build configuration list for PBXProject "News-App-Searcher" */;
+			buildConfigurationList = E703E2A829112DFC00C3DE79 /* Build configuration list for PBXProject "Music App Streaming" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -135,58 +113,43 @@
 				en,
 				Base,
 			);
-			mainGroup = E7FF2476290D9CA300223FA1;
-			productRefGroup = E7FF2480290D9CA300223FA1 /* Products */;
+			mainGroup = E703E2A429112DFC00C3DE79;
+			productRefGroup = E703E2AE29112DFC00C3DE79 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E7FF247E290D9CA300223FA1 /* News-App-Searcher */,
+				E703E2AC29112DFC00C3DE79 /* Music App Streaming */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E7FF247D290D9CA300223FA1 /* Resources */ = {
+		E703E2AB29112DFC00C3DE79 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7FF248F290D9CA400223FA1 /* LaunchScreen.storyboard in Resources */,
-				E7FF248C290D9CA400223FA1 /* Assets.xcassets in Resources */,
+				E703E2B829112DFD00C3DE79 /* Preview Assets.xcassets in Resources */,
+				E703E2B529112DFD00C3DE79 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E7FF247B290D9CA300223FA1 /* Sources */ = {
+		E703E2A929112DFC00C3DE79 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7FF249A290DBD0A00223FA1 /* DataModel.swift in Sources */,
-				E7FF2487290D9CA300223FA1 /* ViewController.swift in Sources */,
-				E7FF249D290DD5EC00223FA1 /* ArticleCell.swift in Sources */,
-				E7F61068290F293200815104 /* PopUpVCTableViewController.swift in Sources */,
-				E7FF2483290D9CA300223FA1 /* AppDelegate.swift in Sources */,
-				E7FF2485290D9CA300223FA1 /* SceneDelegate.swift in Sources */,
-				E7FF2497290DB1AD00223FA1 /* apiHandler.swift in Sources */,
+				E703E2B329112DFC00C3DE79 /* ContentView.swift in Sources */,
+				E703E2B129112DFC00C3DE79 /* Music_App_StreamingApp.swift in Sources */,
+				E703E2BF291143D500C3DE79 /* SongsData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		E7FF248D290D9CA400223FA1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E7FF248E290D9CA400223FA1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
-		E7FF2491290D9CA400223FA1 /* Debug */ = {
+		E703E2B929112DFD00C3DE79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -246,7 +209,7 @@
 			};
 			name = Debug;
 		};
-		E7FF2492290D9CA400223FA1 /* Release */ = {
+		E703E2BA29112DFD00C3DE79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -300,18 +263,20 @@
 			};
 			name = Release;
 		};
-		E7FF2494290D9CA400223FA1 /* Debug */ = {
+		E703E2BC29112DFD00C3DE79 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Music App Streaming/Preview Content\"";
 				DEVELOPMENT_TEAM = T453A8JHR5;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "News-App-Searcher/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,7 +284,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "omar.leal.News-App-Searcher";
+				PRODUCT_BUNDLE_IDENTIFIER = "omar.leal.Music-App-Streaming";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -327,18 +292,20 @@
 			};
 			name = Debug;
 		};
-		E7FF2495290D9CA400223FA1 /* Release */ = {
+		E703E2BD29112DFD00C3DE79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Music App Streaming/Preview Content\"";
 				DEVELOPMENT_TEAM = T453A8JHR5;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "News-App-Searcher/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -346,7 +313,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "omar.leal.News-App-Searcher";
+				PRODUCT_BUNDLE_IDENTIFIER = "omar.leal.Music-App-Streaming";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -357,25 +324,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E7FF247A290D9CA300223FA1 /* Build configuration list for PBXProject "News-App-Searcher" */ = {
+		E703E2A829112DFC00C3DE79 /* Build configuration list for PBXProject "Music App Streaming" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E7FF2491290D9CA400223FA1 /* Debug */,
-				E7FF2492290D9CA400223FA1 /* Release */,
+				E703E2B929112DFD00C3DE79 /* Debug */,
+				E703E2BA29112DFD00C3DE79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E7FF2493290D9CA400223FA1 /* Build configuration list for PBXNativeTarget "News-App-Searcher" */ = {
+		E703E2BB29112DFD00C3DE79 /* Build configuration list for PBXNativeTarget "Music App Streaming" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E7FF2494290D9CA400223FA1 /* Debug */,
-				E7FF2495290D9CA400223FA1 /* Release */,
+				E703E2BC29112DFD00C3DE79 /* Debug */,
+				E703E2BD29112DFD00C3DE79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E7FF2477290D9CA300223FA1 /* Project object */;
+	rootObject = E703E2A529112DFC00C3DE79 /* Project object */;
 }
