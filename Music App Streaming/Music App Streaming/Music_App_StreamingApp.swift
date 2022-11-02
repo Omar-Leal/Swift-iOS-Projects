@@ -6,12 +6,19 @@
 //
 
 import SwiftUI
+import FirebaseCore
 
 @main
 struct Music_App_StreamingApp: App {
+    let dataCopy = DataManager()
+    init() {
+        FirebaseApp.configure()
+        dataCopy.loadAlbums()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(data: dataCopy)
         }
     }
 }

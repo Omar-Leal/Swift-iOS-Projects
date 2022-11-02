@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseStorage
 
 struct Album: Hashable {
     var id = UUID()
@@ -23,20 +24,7 @@ struct Songs: Hashable {
 
 struct ContentView: View {
     
-    var albums: [Album ] = [
-    Album(name: "Paul McCarney", image: "Album3", songs: paulMacCarney),
-    Album(name: "The Weeknd", image: "Album4", songs: weeknd),
-    Album(name: "Miles David", image: "Album1", songs: albumData),
-    Album(name: "Cerati", image: "Album2", songs: albumData),
-    Album(name: "Paul McCarney", image: "Album3", songs: paulMacCarney),
-    Album(name: "The Weeknd", image: "Album4", songs: weeknd),
-    Album(name: "Miles David", image: "Album1", songs: albumData),
-    Album(name: "Cerati", image: "Album2", songs: albumData),
-    Album(name: "Paul McCarney", image: "Album3", songs: paulMacCarney),
-    Album(name: "The Weeknd", image: "Album4", songs: weeknd),
-    Album(name: "Miles David", image: "Album1", songs: albumData),
-    Album(name: "Cerati", image: "Album2", songs: albumData),
-    ]
+    @ObservedObject var data: DataManager
     
     @State private var currentAlbum: Album?
     
@@ -45,7 +33,7 @@ struct ContentView: View {
             ScrollView {
                 ScrollView(.horizontal, showsIndicators: false, content: {
                     LazyHStack {
-                        ForEach(self.albums,id: \.self ,content: {
+                        ForEach(self.data.albums2,id: \.self ,content: {
                             album in
                             AlbumArt(album: album)
                                 .onTapGesture {
@@ -56,10 +44,16 @@ struct ContentView: View {
                 })
                 
                 LazyVStack {
-                    ForEach((self.currentAlbum?.songs ?? self.albums.first?.songs ) ?? paulMacCarney, id: \.self, content: {
-                        song in
-                        SongCell(songs: song)
-                    })
+                    if self.data.albums2.first == nil {
+                        EmptyView()
+                       
+                    } else  {
+                        ForEach((self.currentAlbum?.songs ?? self.data.albums2.first?.songs ) ?? paulMacCarney, id: \.self, content: {
+                            song in
+                            SongCell(album: currentAlbum ?? self.data.albums2.first!, songs: song)
+                        })
+                    }
+                        
                 }
             }.navigationTitle("My Favorite Music")
         }
@@ -69,22 +63,23 @@ struct ContentView: View {
 
 
 struct AlbumArt: View {
+   
     var album: Album
+    var isWithText: Bool = true
+    
     var body: some View {
         ZStack {
            
-            Image(album.image).resizable()
+            Image(album.image)
+                .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(width: 200, height: 200, alignment: .center)
-            ZStack {
-                BlurEffect(style: .light)
-                Text(album.name)
-                    .foregroundColor(.white)
-            }.frame( height: 40, alignment: .center)
-                .cornerRadius(8)
-        }.frame(width: 200, height: 200, alignment: .center)
+                .cornerRadius(20)
+               
+        }
+        .frame(width: 200, height: 200, alignment: .center)
         .clipped()
-         .cornerRadius(8)
+         //.cornerRadius(20)
          //.shadow(radius: 10)
          .padding(20)
          
@@ -92,26 +87,38 @@ struct AlbumArt: View {
 }
 
 struct SongCell: View {
+    var album: Album
     var songs: Songs
     var body: some View {
-        HStack {
-            ZStack {
-                Circle().frame(width: 40, height: 40, alignment: .center)
-                        .foregroundColor(.blue)
-                Circle().frame(width: 20, height: 20, alignment: .center)
-                        .foregroundColor(.white)
-            }
-            Text(songs.name)
-                .bold()
-                Spacer()
-            Text(songs.time)
-        }.padding(20)
+        NavigationLink(
+            destination: PlayerView(album: album, song: songs),
+              label: {
+                  HStack {
+                      ZStack {
+                          Circle().frame(width: 40, height: 40, alignment: .center)
+                                  .foregroundColor(.blue)
+                          Circle().frame(width: 20, height: 20, alignment: .center)
+                                  .foregroundColor(.white)
+                      }
+                      Text(songs.name)
+                          .font(Font.custom("Avenir", size: 16))
+                          .bold()
+                          Spacer()
+                      Text(songs.time)
+                  }.padding(20)
+                  
+                  
+                  
+                  
+              }).buttonStyle(PlainButtonStyle())
+        
+       
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(data: DataManager())
         
     }
 }
