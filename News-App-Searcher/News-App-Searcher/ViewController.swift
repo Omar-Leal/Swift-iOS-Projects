@@ -37,7 +37,6 @@ class HomeVC: UIViewController, UITableViewDelegate {
        
         
         view.addSubview(tableView)
-       // constraints()
         tableView.dataSource = self
         tableView.delegate = self
       
