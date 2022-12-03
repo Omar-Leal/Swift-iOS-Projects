@@ -17,7 +17,7 @@ struct HomeScreen: View {
             
         }
         .frame(width: isMacOs() ? getRect().width / 1.7 : nil,
-               height: isMacOs() ? getRect().height - 180 : nil)
+               height: isMacOs() ? getRect().height - 180 : nil, alignment: .leading)
         .background(Color(.lightGray).ignoresSafeArea())
         .preferredColorScheme(.light)
     }
@@ -30,6 +30,8 @@ struct HomeScreen: View {
                 .fontWeight(.semibold)
             AddButton()
         }
+        .padding(.top, 30)
+        .frame(maxHeight: .infinity, alignment: .top)
     }
     
     @ViewBuilder

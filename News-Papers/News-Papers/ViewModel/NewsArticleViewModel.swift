@@ -1,8 +1,21 @@
-//
-//  NewsArticleViewModel.swift
-//  News-Papers
-//
-//  Created by Omar Leal on 11/7/22.
-//
-
 import Foundation
+
+class NewArticleViewModel {
+    let title: String
+    let subtitle: String
+    let imageURL: String?
+    let imageData: Data? = nil
+    
+    init(title: String, subtitle: String, imageURL: String) {
+        self.title = title
+        self.subtitle = subtitle
+        self.imageURL = imageURL
+
+    }
+    
+    
+    
+}
+
+
+

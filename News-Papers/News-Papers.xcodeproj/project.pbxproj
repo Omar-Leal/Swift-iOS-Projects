@@ -10,9 +10,11 @@
 		E7D738482915E1B7008CD74C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D738472915E1B7008CD74C /* AppDelegate.swift */; };
 		E7D7384A2915E1B7008CD74C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D738492915E1B7008CD74C /* SceneDelegate.swift */; };
 		E7D7384C2915E1B7008CD74C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7384B2915E1B7008CD74C /* ViewController.swift */; };
-		E7D7384F2915E1B7008CD74C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7D7384D2915E1B7008CD74C /* Main.storyboard */; };
 		E7D738512915E1B8008CD74C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7D738502915E1B8008CD74C /* Assets.xcassets */; };
 		E7D738542915E1B8008CD74C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7D738522915E1B8008CD74C /* LaunchScreen.storyboard */; };
+		E7D7385F2915E7F0008CD74C /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7385E2915E7F0008CD74C /* CustomCell.swift */; };
+		E7EA94D32919AA7F0037EB7D /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EA94D22919AA7F0037EB7D /* data.swift */; };
+		E7EA94D62919CE7E0037EB7D /* NewsArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EA94D52919CE7E0037EB7D /* NewsArticleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +22,12 @@
 		E7D738472915E1B7008CD74C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7D738492915E1B7008CD74C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E7D7384B2915E1B7008CD74C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E7D7384E2915E1B7008CD74C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7D738502915E1B8008CD74C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7D738532915E1B8008CD74C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7D738552915E1B8008CD74C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7D7385E2915E7F0008CD74C /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		E7EA94D22919AA7F0037EB7D /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
+		E7EA94D52919CE7E0037EB7D /* NewsArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		E7D738462915E1B7008CD74C /* News-Papers */ = {
 			isa = PBXGroup;
 			children = (
+				E7D7385D2915E78D008CD74C /* Models */,
+				E7D7385C2915E787008CD74C /* Views */,
+				E7EA94D42919CE340037EB7D /* ViewModel */,
+				E7D7385B2915E780008CD74C /* Controllers */,
 				E7D738472915E1B7008CD74C /* AppDelegate.swift */,
 				E7D738492915E1B7008CD74C /* SceneDelegate.swift */,
-				E7D7384B2915E1B7008CD74C /* ViewController.swift */,
-				E7D7384D2915E1B7008CD74C /* Main.storyboard */,
 				E7D738502915E1B8008CD74C /* Assets.xcassets */,
 				E7D738522915E1B8008CD74C /* LaunchScreen.storyboard */,
 				E7D738552915E1B8008CD74C /* Info.plist */,
+				E7EA94D22919AA7F0037EB7D /* data.swift */,
 			);
 			path = "News-Papers";
+			sourceTree = "<group>";
+		};
+		E7D7385B2915E780008CD74C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E7D7384B2915E1B7008CD74C /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E7D7385C2915E787008CD74C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E7D7385E2915E7F0008CD74C /* CustomCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E7D7385D2915E78D008CD74C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E7EA94D42919CE340037EB7D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E7EA94D52919CE7E0037EB7D /* NewsArticleViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +165,6 @@
 			files = (
 				E7D738542915E1B8008CD74C /* LaunchScreen.storyboard in Resources */,
 				E7D738512915E1B8008CD74C /* Assets.xcassets in Resources */,
-				E7D7384F2915E1B7008CD74C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +177,9 @@
 			files = (
 				E7D7384C2915E1B7008CD74C /* ViewController.swift in Sources */,
 				E7D738482915E1B7008CD74C /* AppDelegate.swift in Sources */,
+				E7EA94D62919CE7E0037EB7D /* NewsArticleViewModel.swift in Sources */,
+				E7D7385F2915E7F0008CD74C /* CustomCell.swift in Sources */,
+				E7EA94D32919AA7F0037EB7D /* data.swift in Sources */,
 				E7D7384A2915E1B7008CD74C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +187,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E7D7384D2915E1B7008CD74C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E7D7384E2915E1B7008CD74C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E7D738522915E1B8008CD74C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +324,6 @@
 				INFOPLIST_FILE = "News-Papers/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +351,6 @@
 				INFOPLIST_FILE = "News-Papers/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
